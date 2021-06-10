@@ -9,6 +9,11 @@ body {
     align-items: center;
 }
 
+/*div {
+    width: 100%;
+    padding-bottom: 75%;
+}
+
 .grid-element {
     border: 1px solid var(--border);
     background-color: var(--background);
@@ -33,6 +38,7 @@ body {
 /*#container:hover > #cell { background-color: yellow; }*/
 
 
+
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
@@ -40,16 +46,17 @@ body {
   
   #container {
     display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1.2rem);
-    grid-template-columns: repeat(var(--grid-cols), 1.2rem);
+    grid-gap: .5rem;
+    grid-template-rows: repeat(var(--grid-rows), .5rem);
+    grid-template-columns: repeat(var(--grid-cols), .5rem);
+    position: relative;
     /*text-align: center;
     align-items: center;
     justify-items: center;*/
   }
   
   .grid-item {
-    padding: 1em;
+    padding: 1rem;
     border: 1px solid #ddd;
     /*text-align: center;
     align-items: center;

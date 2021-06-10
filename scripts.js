@@ -14,6 +14,14 @@ function makeRows(rows, cols) {
 
 makeRows(100, 100);
 
+function scaleBasedOnWindow(container, scale=1, fit=true){
+    if(!fit){
+        container.style.transform='scale('+scale/Math.min(container.clientWidth/window.innerWidth,container.clientHeight/window.innerHeight)+')';
+    }else{
+        container.style.transform='scale('+scale/Math.max(container.clientWidth/window.innerWidth,container.clientHeight/window.innerHeight)+')';
+    }
+}
+
 function changeColor(e) {
 e.target.style.backgroundColor = 'red';
 }
