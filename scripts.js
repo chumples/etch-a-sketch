@@ -1,16 +1,29 @@
 const container = document.getElementById("container");
 
+
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
-    
+    //cell.classList = 'grid-element';
+    cell.addEventListener('mouseover', changeColor);
     container.appendChild(cell).className = "grid-item";
   };
 };
 
-makeRows(16, 16);
+makeRows(100, 100);
+
+function changeColor(e) {
+e.target.style.backgroundColor = 'red';
+}
+
+/*cell.addEventListener('mouseover',
+e => e.target.ClassList.add('my-color-class'))*/
+
+/*cell.addEventListener('mouseover', 
+e => e.target.classList.add('my-colour-class')
+)*/
 
 /*function makeGrid () {
     for (let i= 0; i < 16; i++) {
@@ -23,6 +36,4 @@ makeRows(16, 16);
     }
     document.querySelector('#container').appendChild(row);
     }
-}
-
-makeGrid(16, 16);*/
+}*/
