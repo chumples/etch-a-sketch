@@ -1,24 +1,49 @@
+/**{margin: 0; padding: 0;}*/
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+    font-size: 100px;
+    height: 10px;
+    margin-top: -30rem;
+    margin-bottom: 50rem;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 body {
     box-sizing: border-box;
     margin: 0px;
+    margin-top: 0rem;
     width:100%;
     height: 100vh;
-
+    position: relative;
+    padding-top: 100px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+
 /*div {
     width: 100%;
     padding-bottom: 75%;
 }
-
 .grid-element {
     border: 1px solid var(--border);
     background-color: var(--background);
   }
-
 /*grid-item {
     height: 30px;
     width: 30px;
@@ -26,7 +51,6 @@ body {
     text-align: center;
     transition: ease 3s all;
 }
-
 .grid-item:hover {
     background-color: blue;
     /*transition: ease 0.1s all;
@@ -43,21 +67,46 @@ body {
     --grid-cols: 1;
     --grid-rows: 1;
   }
-  
-  #container {
-    display: grid;
-    grid-gap: .5rem;
-    grid-template-rows: repeat(var(--grid-rows), .5rem);
-    grid-template-columns: repeat(var(--grid-cols), .5rem);
-    position: relative;
-    /*text-align: center;
+
+  .btns {
+    display: flex;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    margin: 0, auto;
     align-items: center;
-    justify-items: center;*/
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 20rem;
+    right: 18.3rem;
   }
   
+  #container {
+    
+    display: grid;
+    margin: 0, auto;
+    top: -5rem;
+    padding-left: 8rem;
+    line-height: 0;
+    min-width: 0;
+    min-height: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(var(--grid-rows), 1rem);
+    grid-template-columns: repeat(var(--grid-cols), 1rem);
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  
+
   .grid-item {
     padding: 1rem;
     border: 1px solid #ddd;
+    overflow: hidden;
     /*text-align: center;
     align-items: center;
     justify-items: center;*/
@@ -71,7 +120,6 @@ body {
     display: grid;
     grid-template-rows: 1fr, 1rr,
 }
-
 /*.box {
     background: #9E9E9E;
     border: white 1px solid;
