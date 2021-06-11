@@ -12,6 +12,7 @@ function makeRows(rows, cols) {
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement('div');
     //cell.classList = 'grid-element';
+    cell.style.backgroundColor = 'white';
     cell.addEventListener('mouseover', changeColor);
     container.appendChild(cell).className = 'grid-item';
   };
