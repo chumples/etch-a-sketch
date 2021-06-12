@@ -14,7 +14,10 @@ function makeRows(rows, cols) {
     //cell.classList = 'grid-element';
     cell.style.backgroundColor = 'white';
     cell.addEventListener('mouseover', changeColor);
+    container.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+    container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
     container.appendChild(cell).className = 'grid-item';
+    
   };
 };
 
