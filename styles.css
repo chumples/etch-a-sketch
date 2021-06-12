@@ -28,7 +28,10 @@ body {
 }
 
 footer {
-    display: flex;
+    height: 10rem;
+    margin-top: 50rem;
+    position: relative;
+    
 }
 
 :root {
@@ -36,31 +39,42 @@ footer {
     --grid-rows: 1;
   }
 
+  div.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+    text-align: center;
+  }
+
   .btns {
-    display: flex;
-    flex-direction: row;
-    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
     background-color: rgb(41, 36, 36);
     color: white;
     font-family: inherit;
-    margin: 0, auto;
+    cursor: pointer;
+    margin-bottom: 0;
+
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 20rem;
+    top: 10rem;
     right: 18.3rem;
-    cursor: pointer;
   }
-  
+
+
   #container {
-    
     display: grid;
     margin: 0, auto;
     height: 600px;
     width: 600px;
     top: -5rem;
-    padding-left: 8rem;
+    padding-left: 11rem;
     line-height: 0;
     min-width: 0;
     min-height: 0;
